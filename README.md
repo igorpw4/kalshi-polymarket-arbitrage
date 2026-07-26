@@ -236,7 +236,17 @@ de 15 minutos torna o último pequeno, mas ele existe.
 README.md          # este arquivo: tese, resultados, por que não fecha
 POST-MORTEM.md     # análise técnica completa (~8.000 palavras)
 arbitrage_bot.py   # o bot, arquivo único, ~3.400 linhas
+data/              # saídas de análise que sustentam os números acima
+  divergence_report.csv      # strike Kalshi vs priceToBeat Poly, por rodada
+  divergence_vs_naked.csv    # divergências cruzadas com a posição carregada
+  paper_compound_ops.csv     # log do paper trading de 4 pernas
+  operations.csv             # execuções reais do bot
+  arb_timeseries_report.csv  # varredura histórica de edge
 ```
+
+Os dados estão em [`data/`](data/) com um [README próprio](data/README.md)
+descrevendo as colunas. A taxa de divergência é reproduzível em cinco linhas de
+Python a partir do `divergence_report.csv`.
 
 **[→ Leia o POST-MORTEM.md](POST-MORTEM.md)** para o aprofundamento: derivação
 completa do valor esperado, microestrutura das duas plataformas, o trabalho de
