@@ -207,20 +207,6 @@ latência medido otimização por otimização, a cascata de recuperação de *l
 risk*, e os bugs que custaram dinheiro (incluindo um erro de ponto flutuante que
 pagava 1¢ a mais por operação num negócio que ganhava 2¢).
 
-## Limitações e próximos passos
-
-- **Sem execução em escala.** Apenas 25 execuções reais, com orçamento de US$ 7.
-  As conclusões sobre EV vêm de dados de resolução (~30 dias) e paper trading
-  (20 h), não de PnL realizado.
-- **Nove divergências é pouco.** O viés direcional de 79% é mecanicamente
-  explicável, mas a estimativa de EV por lado repousa sobre nove observações.
-  Otimizar em cima disso seria trocar um erro conceitual por um overfit.
-- **Slippage é estático.** Um modelo de impacto de mercado seria o próximo passo
-  natural.
-- **Sem risco de contraparte ou regulatório modelado.**
-- **O caminho que faria sentido**, se eu fosse continuar: abandonar o par
-  Kalshi × Polymarket para BTC e procurar contratos com **fonte de resolução
-  idêntica e documentada**. Sem isso, nenhuma engenharia salva a estratégia.
 
 ## Aviso
 
